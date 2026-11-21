@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgRobot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101f"/>
+      <stop offset="100%" stop-color="#14182b"/>
+    </linearGradient>
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="320" fill="url(#bgRobot)"/>
+
+  <!-- Circuit lines -->
+  <g stroke="rgba(16, 185, 129, 0.2)" stroke-width="1.5" fill="none">
+    <path d="M 40 160 H 160 V 90 H 240"/>
+    <circle cx="240" cy="90" r="4" fill="#10b981"/>
+    <path d="M 40 240 H 180 V 220 H 230"/>
+    <circle cx="230" cy="220" r="4" fill="#06b6d4"/>
+    <path d="M 560 160 H 440 V 90 H 360"/>
+    <circle cx="360" cy="90" r="4" fill="#10b981"/>
+    <path d="M 560 240 H 420 V 220 H 370"/>
+    <circle cx="370" cy="220" r="4" fill="#06b6d4"/>
+  </g>
+
+  <!-- Robot Head & Face -->
+  <g transform="translate(230, 70)">
+    <!-- Aura Glow -->
+    <ellipse cx="70" cy="80" rx="95" ry="85" fill="rgba(16, 185, 129, 0.08)"/>
+
+    <!-- Head Body -->
+    <rect x="0" y="0" width="140" height="150" rx="30" fill="#1e293b" stroke="url(#glowG)" stroke-width="2"/>
+    
+    <!-- Ears / Sensors -->
+    <rect x="-12" y="55" width="12" height="35" rx="5" fill="#334155"/>
+    <rect x="140" y="55" width="12" height="35" rx="5" fill="#334155"/>
+
+    <!-- Screen Visor -->
+    <rect x="15" y="25" width="110" height="80" rx="18" fill="#090d16" stroke="rgba(255,255,255,0.1)"/>
+
+    <!-- Expressive Cyber Eyes -->
+    <ellipse cx="45" cy="65" rx="14" ry="16" fill="#34d399"/>
+    <ellipse cx="95" cy="65" rx="14" ry="16" fill="#34d399"/>
+    <circle cx="49" cy="61" r="5" fill="#f0fdf4"/>
+    <circle cx="99" cy="61" r="5" fill="#f0fdf4"/>
+
+    <!-- Status Smile Line -->
+    <path d="M 55 90 Q 70 98 85 90" stroke="#10b981" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Neck / Stand -->
+    <rect x="45" y="150" width="50" height="30" rx="6" fill="#334155"/>
+  </g>
+
+  <!-- Telemetry HUD tags -->
+  <g transform="translate(60, 45)">
+    <rect width="135" height="50" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(16, 185, 129, 0.3)"/>
+    <text x="12" y="20" fill="#94a3b8" font-family="monospace" font-size="10">8051 / ARM CORE</text>
+    <text x="12" y="38" fill="#34d399" font-family="monospace" font-size="14" font-weight="bold">ACTIVE (12MHz)</text>
+  </g>
+
+  <g transform="translate(405, 45)">
+    <rect width="135" height="50" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(6, 182, 212, 0.3)"/>
+    <text x="12" y="20" fill="#94a3b8" font-family="monospace" font-size="10">ULTRASONIC SENSOR</text>
+    <text x="12" y="38" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="bold">CLEAR (140 cm)</text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTyping" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b101b"/>
+      <stop offset="100%" stop-color="#141c2e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="320" fill="url(#bgTyping)"/>
+
+  <!-- Code Window Shell -->
+  <g transform="translate(60, 35)">
+    <rect width="480" height="250" rx="12" fill="#0f172a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    
+    <!-- Titlebar -->
+    <rect width="480" height="38" rx="12" fill="#1e293b"/>
+    <rect y="26" width="480" height="12" fill="#1e293b"/>
+    <circle cx="22" cy="19" r="6" fill="#ef4444"/>
+    <circle cx="42" cy="19" r="6" fill="#f59e0b"/>
+    <circle cx="62" cy="19" r="6" fill="#10b981"/>
+    <text x="240" y="24" fill="#94a3b8" font-family="monospace" font-size="12" text-anchor="middle">typing_speed_tester.py - Tkinter</text>
+
+    <!-- Metrics Bar -->
+    <g transform="translate(30, 60)">
+      <!-- WPM Box -->
+      <rect width="120" height="48" rx="8" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+      <text x="14" y="20" fill="#94a3b8" font-family="monospace" font-size="10">WORDS / MIN</text>
+      <text x="14" y="40" fill="#34d399" font-family="monospace" font-size="18" font-weight="bold">78 WPM</text>
+
+      <!-- Accuracy Box -->
+      <g transform="translate(150, 0)">
+        <rect width="120" height="48" rx="8" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1"/>
+        <text x="14" y="20" fill="#94a3b8" font-family="monospace" font-size="10">ACCURACY</text>
+        <text x="14" y="40" fill="#38bdf8" font-family="monospace" font-size="18" font-weight="bold">98.5%</text>
+      </g>
+
+      <!-- Time Box -->
+      <g transform="translate(300, 0)">
+        <rect width="120" height="48" rx="8" fill="rgba(245, 158, 11, 0.12)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1"/>
+        <text x="14" y="20" fill="#94a3b8" font-family="monospace" font-size="10">TIME LEFT</text>
+        <text x="14" y="40" fill="#fbbf24" font-family="monospace" font-size="18" font-weight="bold">00:42s</text>
+      </g>
+    </g>
+
+    <!-- Text prompt sample -->
+    <g transform="translate(30, 135)">
+      <rect width="420" height="45" rx="6" fill="#182234" stroke="rgba(255,255,255,0.06)"/>
+      <text x="15" y="28" fill="#e2e8f0" font-family="monospace" font-size="13">
+        The quick brown fox <tspan fill="#34d399">jumps over</tspan> <tspan fill="#f43f5e">the</tspan> lazy dog.
+      </text>
+    </g>
+
+    <!-- User Input Field with Blinking Cursor -->
+    <g transform="translate(30, 195)">
+      <rect width="420" height="36" rx="6" fill="#0b111e" stroke="#10b981" stroke-width="1.5"/>
+      <text x="15" y="23" fill="#34d399" font-family="monospace" font-size="13">jumps over the </text>
+      <line x1="140" y1="9" x2="140" y2="27" stroke="#34d399" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

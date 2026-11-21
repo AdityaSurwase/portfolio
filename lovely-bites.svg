@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBites" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140f1a"/>
+      <stop offset="100%" stop-color="#211728"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="320" fill="url(#bgBites)"/>
+
+  <!-- POS Frame -->
+  <g transform="translate(60, 35)">
+    <rect width="480" height="250" rx="12" fill="#181324" stroke="rgba(244, 63, 94, 0.25)" stroke-width="1"/>
+    
+    <!-- Header -->
+    <rect width="480" height="40" rx="12" fill="#241b36"/>
+    <rect y="28" width="480" height="12" fill="#241b36"/>
+    <text x="25" y="26" fill="#fb7185" font-family="sans-serif" font-weight="bold" font-size="14">🍕 Lovely Bites POS &amp; Order Manager</text>
+    <text x="375" y="25" fill="#f43f5e" font-family="monospace" font-size="11">Order #204</text>
+
+    <!-- Menu Items Left -->
+    <g transform="translate(25, 55)">
+      <rect width="250" height="175" rx="8" fill="#130e1e" stroke="rgba(255,255,255,0.05)"/>
+      <text x="15" y="25" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Active Menu Items</text>
+      
+      <!-- item row 1 -->
+      <g transform="translate(15, 40)">
+        <text x="0" y="14" fill="#f8fafc" font-size="11">Margherita Pizza (Large)</text>
+        <text x="190" y="14" fill="#34d399" font-family="monospace" font-size="11">₹340</text>
+      </g>
+      <!-- item row 2 -->
+      <g transform="translate(15, 70)">
+        <text x="0" y="14" fill="#f8fafc" font-size="11">Garlic Herb Breadsticks</text>
+        <text x="190" y="14" fill="#34d399" font-family="monospace" font-size="11">₹120</text>
+      </g>
+      <!-- item row 3 -->
+      <g transform="translate(15, 100)">
+        <text x="0" y="14" fill="#f8fafc" font-size="11">Choco Lava Delight</text>
+        <text x="190" y="14" fill="#34d399" font-family="monospace" font-size="11">₹110</text>
+      </g>
+      <!-- item row 4 -->
+      <g transform="translate(15, 130)">
+        <text x="0" y="14" fill="#f8fafc" font-size="11">Iced Caramel Latte</text>
+        <text x="190" y="14" fill="#34d399" font-family="monospace" font-size="11">₹130</text>
+      </g>
+    </g>
+
+    <!-- Invoice Summary Right -->
+    <g transform="translate(290, 55)">
+      <rect width="165" height="175" rx="8" fill="#130e1e" stroke="rgba(255,255,255,0.05)"/>
+      <text x="15" y="25" fill="#cbd5e1" font-family="sans-serif" font-size="12" font-weight="600">Bill Summary</text>
+      
+      <text x="15" y="55" fill="#94a3b8" font-size="10">Subtotal: ₹700.00</text>
+      <text x="15" y="75" fill="#94a3b8" font-size="10">GST (5%): ₹35.00</text>
+      <line x1="15" y1="95" x2="150" y2="95" stroke="rgba(255,255,255,0.1)"/>
+      <text x="15" y="120" fill="#fb7185" font-family="sans-serif" font-weight="bold" font-size="13">Total: ₹735.00</text>
+
+      <rect x="15" y="135" width="135" height="26" rx="4" fill="#10b981"/>
+      <text x="40" y="152" fill="#042f1a" font-family="sans-serif" font-size="10" font-weight="bold">PRINT RECEIPT</text>
+    </g>
+  </g>
+</svg>

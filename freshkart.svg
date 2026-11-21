@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFresh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1515"/>
+      <stop offset="100%" stop-color="#122524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="320" fill="url(#bgFresh)"/>
+
+  <!-- Dashboard Frame -->
+  <g transform="translate(60, 40)">
+    <rect width="480" height="240" rx="12" fill="#0f1d1d" stroke="rgba(16, 185, 129, 0.25)" stroke-width="1"/>
+    
+    <!-- Header -->
+    <rect width="480" height="42" rx="12" fill="#142828"/>
+    <rect y="30" width="480" height="12" fill="#142828"/>
+    
+    <text x="25" y="27" fill="#34d399" font-family="sans-serif" font-weight="bold" font-size="14">🌿 FreshKart CLI &amp; Store</text>
+    <rect x="360" y="10" width="95" height="22" rx="4" fill="rgba(16, 185, 129, 0.15)"/>
+    <text x="375" y="25" fill="#10b981" font-family="monospace" font-size="10">Cart: 4 items</text>
+
+    <!-- Product Grid -->
+    <g transform="translate(25, 60)">
+      <!-- Item 1 -->
+      <rect width="130" height="75" rx="8" fill="#1b3332" stroke="rgba(255,255,255,0.06)"/>
+      <circle cx="28" cy="28" r="14" fill="rgba(239, 68, 68, 0.2)"/>
+      <text x="22" y="33" font-size="14">🍎</text>
+      <text x="52" y="24" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Organic Apples</text>
+      <text x="52" y="38" fill="#94a3b8" font-family="monospace" font-size="9">₹120 / kg</text>
+      <rect x="14" y="50" width="102" height="16" rx="3" fill="#10b981"/>
+      <text x="44" y="62" fill="#052e16" font-family="sans-serif" font-size="9" font-weight="bold">In Stock</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(150, 0)">
+        <rect width="130" height="75" rx="8" fill="#1b3332" stroke="rgba(255,255,255,0.06)"/>
+        <circle cx="28" cy="28" r="14" fill="rgba(34, 197, 94, 0.2)"/>
+        <text x="22" y="33" font-size="14">🥑</text>
+        <text x="52" y="24" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Fresh Avocados</text>
+        <text x="52" y="38" fill="#94a3b8" font-family="monospace" font-size="9">₹180 / pack</text>
+        <rect x="14" y="50" width="102" height="16" rx="3" fill="#10b981"/>
+        <text x="44" y="62" fill="#052e16" font-family="sans-serif" font-size="9" font-weight="bold">In Stock</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(300, 0)">
+        <rect width="130" height="75" rx="8" fill="#1b3332" stroke="rgba(255,255,255,0.06)"/>
+        <circle cx="28" cy="28" r="14" fill="rgba(245, 158, 11, 0.2)"/>
+        <text x="22" y="33" font-size="14">🍊</text>
+        <text x="52" y="24" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Nagpur Oranges</text>
+        <text x="52" y="38" fill="#94a3b8" font-family="monospace" font-size="9">₹90 / kg</text>
+        <rect x="14" y="50" width="102" height="16" rx="3" fill="#10b981"/>
+        <text x="44" y="62" fill="#052e16" font-family="sans-serif" font-size="9" font-weight="bold">In Stock</text>
+      </g>
+    </g>
+
+    <!-- Terminal Output Log at bottom -->
+    <g transform="translate(25, 150)">
+      <rect width="430" height="70" rx="6" fill="#0b1414" stroke="rgba(255,255,255,0.05)"/>
+      <text x="14" y="22" fill="#64748b" font-family="monospace" font-size="10">> calculate_total(cart) -> ₹570.00 (Tax incl.)</text>
+      <text x="14" y="40" fill="#34d399" font-family="monospace" font-size="10">> invoice_generated: INV-2026-0849.pdf</text>
+      <text x="14" y="58" fill="#38bdf8" font-family="monospace" font-size="10">> status: Payment confirmed via Mock Gateway</text>
+    </g>
+  </g>
+</svg>
